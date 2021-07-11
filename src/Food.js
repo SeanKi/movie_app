@@ -1,7 +1,12 @@
 import React from 'react';
 
-function Pizza() {
-    return <h3>I love Pizza</h3>;
+function Food({name, picture}) {
+    return (
+        <div>
+            <h2>I like {name}</h2>
+            <img src={picture} alt={name}/>
+        </div>
+    );
 }
 
-export default Pizza;
+export default Food;
